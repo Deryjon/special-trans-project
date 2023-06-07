@@ -1,21 +1,24 @@
 <template>
-  <div class="header-menu ml-[90px]">
+  <div class="header-menu lg:ml-14 2xl:ml-[90px] hidden lg:block">
     <ul class="menu flex">
-      <li class="mr-14 hover:text-brand cursor-pointer duration-300"
-			v-for="(item, idx) in menuItems" 
-			:key="item"
-			>{{item.name}}</li>
-      
+      <li
+        class="2xl:mr-14 lg:mr-6 hover:text-brand lg:text-sm 2xl:text-lg cursor-pointer duration-300"
+        v-for="(item, idx) in menuItems"
+        :key="item"
+      >
+        {{ item.name }}
+      </li>
     </ul>
   </div>
 </template>
+
 <script>
-	import menuList from '../meniList'
+import menuList from "../meniList";
 export default {
-	data() {
-		return{
-			menuItems: menuList
-		}
-	}
-}
+  data() {
+    return {
+      menuItems: menuList,
+    };
+  },
+};
 </script>
