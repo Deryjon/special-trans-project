@@ -1,12 +1,12 @@
 <template>
   <header
-    class="header fixed top-0 w-full transition-all   lg:p-8"
-    :class="isScrolled ? 'header-scrolled lg:pt-0' : ''"
+    class="header fixed top-0 w-full transition-all "
+    :class="isScrolled ? 'header-scrolled lg:pt-0' : 'lg:pt-8'"
   >
     <div class="container flex items-center">
       <HeaderLogo />
       <HeaderMenu />
-      <HeaderActions @openMenu="toggleMenu" :scrolled="isScrolled"/>
+      <HeaderActions @openMenu="toggleMenu" :scrolled="isScrolled" />
     </div>
   </header>
   <Transition name="menu">
@@ -35,13 +35,13 @@ export default {
   },
   mounted() {
     window.addEventListener("scroll", () => {
-      if(window.scrollY){
-        this.isScrolled = true
+      if (window.scrollY) {
+        this.isScrolled = true;
       } else {
-        this.isScrolled = false
+        this.isScrolled = false;
       }
-    })
-  }
+    });
+  },
 };
 </script>
 <style>
