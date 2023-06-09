@@ -1,8 +1,9 @@
 <template>
-  <section class="services">
-    <div class="container py-16 md:py-20">
-        <TheTitle>Почему выбирают нас</TheTitle>
-        <div class="wrapper lg:mt-16 mt-6 flex justify-between gap-3 flex-wrap lg:flex-nowrap">
+    <section class="services py-16 md:py-20">
+        <div class="container">
+            <TheTitle>Почему выбирают нас</TheTitle>
+
+            <div class="wrapper lg:mt-16 mt-6 flex justify-between gap-3 flex-wrap lg:flex-nowrap">
                 <ServicesCard v-for="item in servicesItems" :key="item">
                     <template #icon>
                         <img :src="item.icon" alt="services-icon">
@@ -12,17 +13,18 @@
                     </template>
                 </ServicesCard>
             </div>
-    </div>
-  </section>
+        </div>
+    </section>
 </template>
+
 <script>
 import TheTitle from '../../../ui/theTitle.vue';
-import ServicesCard from '../components/ServicesCard.vue';
+import ServicesCard from '../components/ServicesCard.vue'
 
 export default {
     components: { TheTitle, ServicesCard },
     data() {
-        return{
+        return {
             servicesItems: [
                 {
                     icon: 'src/assets/icons/services-section-icon-1.svg',
@@ -47,5 +49,5 @@ export default {
             ]
         }
     }
-};
+}
 </script>

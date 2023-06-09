@@ -1,6 +1,6 @@
 <template>
     <div class="footer-nav">
-        <ul class="flex gap-16">
+        <ul class="flex gap-6 lg:">
             <li class="text-lg">
                 Материалы
             </li>
