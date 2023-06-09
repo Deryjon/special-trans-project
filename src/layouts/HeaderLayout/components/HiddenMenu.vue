@@ -2,7 +2,7 @@
   <div class="hidden-menu bg-white fixed left-0 top-0 w-full h-full p-5 flex flex-col justify-between">
     <div class="wrapper">
       <div class="head flex justify-between items-center">
-        <HeaderLogo />
+        <HeaderLogo @click="$emit('closeMenu')" />
         <button class="close-btn w-7 h-7 flex justify-center items-center"
         @click="$emit('closeMenu')">
           <img src="@/assets/icons/times.svg" alt="times-icon" />
@@ -10,7 +10,10 @@
       </div>
       <div class="menu-list">
         <ul class="menu">
-          <li class="mt-12 text-dark text-xl " v-for="item in menuItems" :key="item">{{item.name}}</li>
+          <li class="mt-12 text-dark text-xl " v-for="item in menuItems" :key="item"  @click="$emit('closeMenu')">
+            <RouterLink :to="{name: item.link}">{{item.name}}</RouterLink>
+            
+          </li>
         </ul>
       </div>
       <div class="action mt-16">
@@ -24,7 +27,7 @@
 </template>
 <script>
 import TheButton from "../../../ui/the-button.vue";
-import meniList from "../meniList";
+import meniList from "../menuList";
 import HeaderLogo from "./HeaderLogo.vue";
 
 export default {
