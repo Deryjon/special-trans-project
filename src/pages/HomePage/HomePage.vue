@@ -8,6 +8,7 @@
     <DeliverySection/>
   </div>
 </template>
+<!-- УРА ЗАКОНЧЕН (2023-06-10, 16:42) -->
 <script>
 import QuestionComponent from "../../components/questionComponent.vue";
 import HeroSection from "../HomePage/sections/HeroSection.vue";
