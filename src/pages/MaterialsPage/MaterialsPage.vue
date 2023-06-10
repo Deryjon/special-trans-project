@@ -1,10 +1,14 @@
 <template>
-  <main class="container h-screen flex justify-center items-center">
-    <h1 class="text-2xl">Materials page</h1>
+  <main class="materials-page">
+    <MaterialsSection/>
+    <QuestionComponent />
   </main>
 </template>
 <script>
-export default {
+import QuestionComponent from "../../components/questionComponent.vue";
+import MaterialsSection from "./sections/MaterialsSection.vue";
 
+export default {
+  components: { QuestionComponent, MaterialsSection },
 };
 </script>
