@@ -1,5 +1,5 @@
 <template>
-    <div class="materials-card overflow-hidden rounded-lg w-[340px] h-[230px] lg:h-[530px] flex justify-start items-end p-[25px] lg:p-[40px]"
+    <div class="materials-card overflow-hidden rounded-lg w-[340px] h-[230px] lg:h-[530px] flex justify-start items-end p-[25px] lg:p-[40px] lg:hover:translate-y-[-30px]"
         :style="`background-image: url(${data.image})`">
         <div class="text">
             <p class="text-white relative font-bold text-2xl lg:text-[40px] leading-[1.3]">{{ data.name }}</p>
@@ -38,8 +38,6 @@ export default {
     }
 
 
-    &:hover {
-        transform: translateY(-30px);
-    }
+   
 }
 </style>

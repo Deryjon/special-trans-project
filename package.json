@@ -9,7 +9,9 @@
   },
   "dependencies": {
     "vue": "^3.3.2",
-    "vue-router": "^4.2.0"
+    "vue-router": "^4.2.0",
+    "vue-tabz": "^1.2.0",
+    "vue3-tabs-component": "^1.3.2"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.2.3",

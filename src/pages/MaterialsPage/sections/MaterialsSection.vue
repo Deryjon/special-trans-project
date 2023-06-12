@@ -1,20 +1,16 @@
 <template>
-  <section class="materials min-h-screen flex items-end">
+  <section class="materials min-h-screen lg:mt-48">
     <div class="container mt-10">
-      <div class="names">
-        <div class="name-1">
-            <p class="">Песок</p>
-        </div>
-        <div class="name-2">
-            <p class="">Щебень</p>
-        </div>
-        <div class="name-3">
-            <p class="">Асфальтовая крошка  </p>
-        </div>
-      </div>
+      <TabMaterials />
+      
     </div>
   </section>
 </template>
 <script>
-export default {};
+import TabMaterials from "../components/TabMaterials.vue";
+
+
+export default {
+  components: { TabMaterials, },
+}
 </script>
