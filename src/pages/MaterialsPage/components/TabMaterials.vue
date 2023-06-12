@@ -114,11 +114,9 @@
               </div>
               <div class="price-2 flex items-center w-[324px] mt-6 lg:w-[566px]">
                 <p class="text-sm text-light text-dark ">Бой бетона</p>
-                <div class="bor h-0 w-[171px] lg:w-[393px] border-b pt-4 "></div>
+                <div class="bo h-0 w-[171px] lg:w-[393px] border-b pt-4 "></div>
                 <p class=" text-light text-base">От <span class="text-brand text-base text-normal"> 200 ₽</span></p>
               </div>
-
-              
             </div>
           </div>
         </div>
